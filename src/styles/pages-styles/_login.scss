@@ -1,0 +1,39 @@
+.login_container {
+  min-height: calc(100vh - 5vmax);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color-lighter-gray;
+
+  > .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    width: 30%;
+    background-color: $text-color-white;
+    margin: auto;
+    padding: 2vmax;
+    border-radius: 10px;
+
+    > h1 {
+      font-size: 1.5rem;
+    }
+
+    > button {
+      width: 100%;
+      padding: 1vmax;
+      background-color: $bg-color-dark-blue;
+      color: $text-color-white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
